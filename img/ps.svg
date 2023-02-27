@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 424 424">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3584ff;
+        font-family: Bahnschrift-Bold, Bahnschrift;
+        font-size: 300px;
+        font-variation-settings: 'wght' 700, 'wdth' 100;
+        letter-spacing: -.05em;
+      }
+
+      .cls-2 {
+        fill: #0b0015;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-2" x=".5" y=".5" width="423" height="423" rx="24.75" ry="24.75"/>
+    <path d="M398.75,1c13.37,0,24.25,10.88,24.25,24.25V398.75c0,13.37-10.88,24.25-24.25,24.25H25.25c-13.37,0-24.25-10.88-24.25-24.25V25.25C1,11.88,11.88,1,25.25,1H398.75m0-1H25.25C11.3,0,0,11.3,0,25.25V398.75c0,13.95,11.3,25.25,25.25,25.25H398.75c13.95,0,25.25-11.3,25.25-25.25V25.25c0-13.95-11.3-25.25-25.25-25.25h0Z"/>
+  </g>
+  <text class="cls-1" transform="translate(57 319)"><tspan x="0" y="0">Ps</tspan></text>
+</svg>

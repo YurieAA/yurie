@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 424 424">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f8daf8;
+        font-family: Bahnschrift, Bahnschrift;
+        font-size: 150px;
+        font-variation-settings: 'wght' 400, 'wdth' 100;
+        letter-spacing: -.04em;
+      }
+
+      .cls-2 {
+        fill: #631400;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" width="424" height="424" rx="25.25" ry="25.25"/>
+  <text class="cls-1" transform="translate(42 270)"><tspan x="0" y="0">SASS</tspan></text>
+</svg>

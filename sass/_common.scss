@@ -1,0 +1,200 @@
+@use "variables" as v;
+
+/*======================================================
+--共通設定  SP
+======================================================*/
+
+body {
+    color: v.$c-font;
+    text-align: center;
+    font-family: 'Shippori Mincho', serif;
+    font-weight: normal;
+
+}
+
+/*    wrapper    */
+
+.wrapper {
+    padding: 30px;
+
+    @include v.pc {
+        padding: 100px;
+
+    }
+}
+
+/*    section    */
+
+section {
+    margin-top: 20px;
+
+    @include v.pc {
+        max-width: 2000px;
+        margin: 0 auto;
+    }
+}
+
+section:nth-child(even) {
+    background-color: #EFE6DB;
+}
+
+/*    img    */
+img {
+    width: 100%;
+    height: auto;
+
+    @include v.pc {
+        max-width: 2000px;
+
+    }
+}
+
+/*    li    */
+li {
+    list-style-type: none;
+}
+
+/*    a    */
+a {
+    text-decoration: none;
+}
+
+/*    p    */
+p {
+    text-align: left;
+    font-size: 14px;
+    background-color: v.$c-bg;
+    padding: 0.5rem 1rem;
+
+    @include v.tab {
+        font-size: 16px;
+    }
+
+    @include v.tab2 {
+        font-size: 18px;
+        padding: 1.5rem;
+    }
+
+    @include v.pc {
+        font-size: 20px;
+        padding:2rem;
+    }
+}
+
+
+/*    h2    */
+h2 {
+    font-size: 24px;
+    margin: 15px auto 15px;
+    width: 70%;
+    padding: 3px 10px;
+    position: relative;
+
+    @include v.tab {
+        font-size: 30px;
+    }
+
+    @include v.tab2 {
+        font-size: 42px;
+    }
+
+    @include v.pc {
+        font-size: 48px;
+        width: 50%;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        width: 25px;
+        height: 25px;
+        position: absolute;
+    }
+
+    &::before {
+        border-left: solid 2px #000000;
+        border-top: solid 2px #000000;
+        top: 0;
+        left: 0;
+    }
+
+    &::after {
+        border-right: solid 2px #000000;
+        border-bottom: solid 2px #000000;
+        bottom: 0;
+        right: 0;
+    }
+
+}
+
+/*    h3    */
+
+h3 {
+    font-size: 22px;
+
+    @include v.tab2 {
+        font-size: 28px;
+    }
+
+    @include v.pc {
+        font-size: 35px;
+    }
+}
+
+/*    TOPへ戻る    */
+
+.top__link {
+    display: none;
+}
+
+@include v.tab {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .top__link.open {
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 20px;
+        bottom: 80px;
+        z-index: 500;
+        text-decoration: none;
+        color: v.$c-font;
+        background-color: rgb(217, 217, 217);;
+        border-radius: 50%;
+
+        width: 7vw;
+        height: 7vw;
+        font-size: 2vw;
+
+        @include v.pc {
+        font-size: clamp(1rem,1.3vw,2rem);
+        }
+    }
+}
+
+/*    上に動作    */
+
+@include v.tab {
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+}

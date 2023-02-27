@@ -1,0 +1,58 @@
+//変数準備
+$c-font: #333; //ベースのフォント色
+$c-bg: rgba(217, 217, 217,0.4); //background-color
+$c-accent: #58DA6D; //アクセントカラー #A9EC53
+$c-header: #DAD6D2; //header color
+$c-bgc: #f8f8f8; //背景白
+$c-accentshadowBtn: rgba(88,218,109,0.5); //アクセントシャドウカラー
+$c-base: #209bbe; //ベースカラー
+$c-main: #5921c8; //メインカラー
+
+//余白 SP  !!!名前より数値みて変数使用してください!!!
+$m-top200: 200px;
+$m-top130: 130px;
+$m-top120: 120px;
+$m-top100: 100px; 
+$m-top95: 95px;
+$m-top90: 90px;
+$m-top80: 80px;
+$m-top60: 60px;
+$m-top50: 50px; 
+$m-top45: 45px;
+$m-top40: 40px; 
+$m-top30: 30px; 
+$m-top25: 25px; 
+$m-top20: 20px; 
+$m-top16: 16px;
+$m-top10: 10px; 
+
+
+//関数準備  pxで打てばremに変換してくれるfunction user指定の文字の大きさで表記するためにカンプのpxからremにする
+@function rem($px, $base: 16) {
+    @return $px / $base * 1rem;
+  }
+
+  //mediaquery
+$pc: 1200px;
+
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+
+$tab2: 650px;
+
+@mixin tab2 {
+  @media (min-width: ($tab2)) {
+    @content;
+  }
+}
+
+$tab: 441px;
+
+@mixin tab {
+  @media (min-width: ($tab)) {
+    @content;
+  }
+}
